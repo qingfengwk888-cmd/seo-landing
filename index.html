@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>需求 SEO / 劫持 流量合作</title>
+
+<style>
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+.screen{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+/* 背景图 */
+.screen img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.55) contrast(1.1);
+}
+
+/* 遮罩 */
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.88));
+}
+
+/* 内容区 */
+.content{
+  position:absolute;
+  left:6%;
+  bottom:15%;
+  max-width:720px;
+}
+
+/* 标题 */
+h1{
+  margin:0 0 10px;
+  font-size:40px;
+  font-weight:900;
+  line-height:1.15;
+}
+
+/* 信任标签（关键） */
+.trust{
+  display:flex;
+  gap:10px;
+  margin:10px 0 14px;
+}
+.trust span{
+  padding:6px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);
+  font-size:13px;
+  font-weight:700;
+  color:#ffb84d;
+  letter-spacing:.5px;
+}
+
+/* 描述 */
+.desc{
+  font-size:16px;
+  color:rgba(255,255,255,.85);
+  margin-bottom:18px;
+  line-height:1.6;
+}
+
+/* 利益参数 */
+.signals{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:22px;
+}
+.signal{
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.16);
+  font-size:13px;
+  font-weight:700;
+}
+
+/* 联系方式 */
+.contact{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.item{
+  padding:14px 18px;
+  border-radius:14px;
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.15);
+  font-size:15px;
+  font-weight:700;
+}
+
+/* 弱入口 */
+.entry{
+  margin-top:18px;
+  padding:14px 18px;
+  border-radius:14px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.18);
+  font-size:15px;
+  font-weight:600;
+  color:rgba(255,255,255,.85);
+  display:inline-block;
+  cursor:pointer;
+}
+.entry:hover{
+  background:rgba(255,255,255,.10);
+}
+
+/* 底角说明 */
+.corner{
+  position:absolute;
+  right:16px;
+  bottom:14px;
+  font-size:11px;
+  color:rgba(255,255,255,.35);
+}
+
+@media(max-width:600px){
+  h1{font-size:28px;}
+  .content{
+    left:20px;
+    right:20px;
+    bottom:14%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="screen">
+
+  <!-- 你的背景图 -->
+  <img src="bj.jpg" alt="">
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>
+      需求 SEO / 跳转<br>
+      网站 / 流量渠道合作
+    </h1>
+
+    <!-- 信任标签 -->
+    <div class="trust">
+      <span>大品牌</span>
+      <span>更靠谱</span>
+    </div>
+
+    <div class="desc">
+      流量资源 · 长期合作<br>
+      不讲故事，只看量
+    </div>
+
+    <div class="signals">
+      <div class="signal">55% 长期分红</div>
+      <div class="signal">短期奖励（看进量）</div>
+      <div class="signal">每周进量激励</div>
+      <div class="signal">长期稳定跑量</div>
+    </div>
+
+    <div class="contact">
+      <div class="item">TG：@KaiYunWind</div>
+      <div class="item">QQ：6251798</div>
+    </div>
+
+    <div class="entry" onclick="window.open('https://t.me/KaiYunWind')">
+      有量可直接对接（TG / QQ）
+    </div>
+  </div>
+
+  <div class="corner">
+    流量合作 · 技术向 · 私下对接
+  </div>
+
+</section>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-183LRZT1LP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-183LRZT1LP');
+  </script>
+
+</body>
+</html>
